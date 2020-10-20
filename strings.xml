@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Available Missions</string>
+    
+    <string-array name="Missions">
+        <item>Mission 1</item>
+        <item>Mission 2</item>
+        <item>Mission 3</item>
+        <item>Mission 4</item>
+
+    </string-array>
+    <string-array name="Location">
+        <item>Beirut</item>
+        <item>Aley</item>
+        <item>Chouf</item>
+        <item>Baalbek</item>
+
+    </string-array>
+    <string-array name="Description">
+        <item>Transport 40 black plain wood </item>
+        <item>Transport the container from port to our factory</item>
+        <item>etc</item>
+        <item>etc</item>
+
+    </string-array>
+</resources>
