@@ -1,0 +1,28 @@
+package com.example.list;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.res.Resources;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+public class MainActivity extends AppCompatActivity {
+   ListView myListView;
+   String[] Missions;
+   String[] Location;
+   String[] Description;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        Resources res =getResources();
+        myListView =(ListView) findViewById(R.id.myListView);
+        Missions = res.getStringArray(R.array.Missions);
+        Location = res.getStringArray(R.array.Location);
+        Description = res.getStringArray(R.array.Description);
+        ItemAdapter itemAdapter= new ItemAdapter(this,Missions,Location,Description);
+        myListView.setAdapter(itemAdapter);
+    }
+}
